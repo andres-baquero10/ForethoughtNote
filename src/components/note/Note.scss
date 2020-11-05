@@ -1,0 +1,50 @@
+.Note-container {
+	padding: 25px 80px 25px 25px;
+	cursor: pointer;
+	position: relative;
+	.Note-title {
+		font-size: 18px;
+		color: white;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+		margin: 0;
+	}
+	.Note-date {
+		font-size: 16px;
+		color: #414141;
+		margin: 10px 0 0 0;
+	}
+	.Note-icon {
+		position: absolute;
+		top: 40px;
+		right: 25px;
+		width: 12px;
+	}
+}
+@media (min-width: 490px) {
+	.Note-container {
+		padding: 35px 90px 35px 35px;
+
+		.Note-title {
+			font-size: 20px;
+		}
+		.Note-date {
+			font-size: 16px;
+		}
+		.Note-icon {
+			position: absolute;
+			top: 48px;
+			right: 32px;
+			width: 15px;
+		}
+	}
+}
+
+.Note-container:hover {
+	background-color: #292929;
+}
+
+.Note--selected {
+	background-color: #292929;
+}

@@ -1,0 +1,43 @@
+.LeftPane-container {
+	width: 30%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	z-index: 1;
+	box-shadow: 5px 0 10px 3px #1c1c1c;
+	.LeftPane-addNoteContainer {
+		height: 90px;
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		.LeftPane-addNoteIcon {
+			width: 25px;
+			cursor: pointer;
+			margin-right: 5%;
+		}
+	}
+	@media (min-width: 490px) {
+		.LeftPane-addNoteContainer {
+			height: 135px;
+
+			.LeftPane-addNoteIcon {
+				width: 40px;
+			}
+		}
+	}
+	.LeftPane-notesContainer {
+		overflow: scroll;
+		flex: 1;
+		width: 100%;
+		.LeftPane-notesList {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+		}
+	}
+}
+
+.LeftPane-bigContainer {
+	width: 100%;
+}
